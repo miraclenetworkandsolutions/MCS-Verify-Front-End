@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 // Pages
-import Home from "./pages/Home";   // ✅ Import added
+import Home from "./pages/home";   // ✅ Import added
 import Courses from "./pages/Courses";
 import Publication from "./pages/Publication";
 import NewsEvents from "./pages/NewsEvents";
