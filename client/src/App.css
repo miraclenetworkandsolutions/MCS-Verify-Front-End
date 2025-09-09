@@ -7,3 +7,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+.page {
+  padding: 40px;
+}
+
+.page h2 {
+  color: #2e0071;
+  margin-bottom: 15px;
+}
