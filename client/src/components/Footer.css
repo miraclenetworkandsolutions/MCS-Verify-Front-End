@@ -1,0 +1,30 @@
+.footer {
+  background: #2e0071;
+  color: white;
+  padding: 30px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.copy {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
