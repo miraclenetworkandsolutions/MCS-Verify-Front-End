@@ -19,11 +19,11 @@ function App() {
           <Navbar />
           <main className={styles.main}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/courses" element={<Courses />} />
+             
+              
               <Route path="/certificate-verification" element={<CertificateVerification />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+              
+              
             </Routes>
           </main>
           <Footer />

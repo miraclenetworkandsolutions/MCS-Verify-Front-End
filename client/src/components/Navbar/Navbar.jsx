@@ -28,9 +28,19 @@ const Navbar = () => {
         <div className="container">
           <div className={styles.navContent}>
             <Link to="/" className={styles.logo}>
-              <div className={styles.logoIcon}>MCS</div>
-              <span className={styles.logoText}>School of Computing</span>
+            <div className={styles.heroBackground}>
+        <img 
+          src="https://www.mcsictschool.com/wp-content/uploads/2022/09/cropped-MCS-LOGO.png" 
+          alt="Students learning" 
+          className={styles.backgroundImage}
+        />
+        <div className={styles.overlay}></div>
+      </div>
+            
             </Link>
+
+
+
 
             <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
               <Link 
