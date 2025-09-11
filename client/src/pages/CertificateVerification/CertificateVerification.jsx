@@ -36,17 +36,17 @@ const CertificateVerification = () => {
     setTimeout(() => {
       // Mock verification result
       const mockResult = {
-        studentName: 'John Doe Silva',
+        studentName: 'Kalana Champika Deshapriya',
         course: 'Miracle Certified WebApp Developer (MCWD)',
         grade: 'Distinction',
-        issueDate: 'March 15, 2024',
-        certificateId: 'MCS-MCWD-2024-001',
-        studentId: 'MCS-2024-STU-001',
+        issueDate: 'March 15, 2025',
+        certificateId: 'MCS-MCWD-2025-001',
+        studentId: 'MCS-2025-STU-001',
         status: 'Valid',
         institution: 'MCS School of Computing',
         description: 'This certificate confirms the successful completion of the Miracle Certified WebApp Developer program with distinction.',
         duration: '6 Months',
-        completionDate: 'March 10, 2024'
+        completionDate: 'March 10, 2025'
       };
 
       setVerificationResult(mockResult);

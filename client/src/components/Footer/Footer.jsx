@@ -10,7 +10,7 @@ const Footer = () => {
           <div className={styles.footerSection}>
             <h3 className={styles.sectionTitle}>Miracle Computer School</h3>
             <div className={styles.contactItem}>
-              <span className={styles.icon}>📍</span>
+              <span className={styles.icon}></span>
               <span>Spring Field, Galahitiyawa, Kulyapitiya, 60200</span>
             </div>
             <div className={styles.contactItem}>
@@ -22,11 +22,11 @@ const Footer = () => {
               <span>info@mcsictschool.com</span>
             </div>
             <div className={styles.socialLinks}>
-              <a href="#" className={styles.socialLink}>📘</a>
-              <a href="#" className={styles.socialLink}>📷</a>
-              <a href="#" className={styles.socialLink}>📺</a>
-              <a href="#" className={styles.socialLink}>🐦</a>
-              <a href="#" className={styles.socialLink}>📞</a>
+              <a href="https://www.facebook.com/" className={styles.socialLink}>📘</a>
+              <a href="https://web.whatsapp.com/" className={styles.socialLink}>📷</a>
+              <a href="https://twitter.com/login?lang=ar" className={styles.socialLink}>📺</a>
+              <a href="https://www.youtube.com/account" className={styles.socialLink}>🐦</a>
+              <a href="https://dialpad.com/login" className={styles.socialLink}>📞</a>
             </div>
           </div>
 
@@ -66,8 +66,12 @@ const Footer = () => {
                 className={styles.newsImage}
               />
               <div className={styles.newsContent}>
+               <a href="https://www.mcsictschool.com/index.php/annual-trip-2020-al-ict-batch/" className={styles.newsTitle}>   
                 <h4 className={styles.newsTitle}>2024 AL ICT – Pidurangala Trip</h4>
-                <p className={styles.newsDate}>December 2024</p>
+               <p className={styles.newsDate}>December 2024</p>
+               </a>
+            
+                
               </div>
             </div>
           </div>
@@ -79,7 +83,7 @@ const Footer = () => {
             <Link to="/terms" className={styles.footerLink}>Terms of Service</Link>
           </div>
           <p className={styles.copyright}>
-            © Copyright 2024 MCS School of Computing | All Rights Reserved | 
+            © Copyright 2025 MCS School of Computing | All Rights Reserved | 
             Powered by Miracle Network & Solutions (Pvt) Ltd.
           </p>
         </div>

@@ -1,0 +1,229 @@
+/* General Layout */
+.page-container {
+  min-height: 100vh;
+  background: #f9fafb; /* gray-50 */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #3b0764, #4c1d95, #6d28d9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-box {
+  background: #f97316;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.header-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+}
+.nav-links a {
+  transition: color 0.2s ease-in-out;
+}
+.nav-links a:hover {
+  color: #fdba74; /* orange-300 */
+}
+
+/* Landing Section */
+.landing-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+.landing-card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+.landing-card p {
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Info Boxes */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.info-box {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+.info-box h3 {
+  font-weight: 600;
+  color: #1f2937;
+}
+.info-box p {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+.purple-box {
+  background: #f5f3ff;
+}
+.orange-box {
+  background: #fff7ed;
+}
+.green-box {
+  background: #ecfdf5;
+}
+
+/* Button */
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #7e22ce, #6b21a8);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+.primary-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #6b21a8, #581c87);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Container */
+.form-container {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+.form-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.form-header {
+  background: linear-gradient(to right, #7e22ce, #6b21a8);
+  padding: 1.5rem 2rem;
+  color: white;
+}
+.form-body {
+  padding: 2rem;
+}
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #9333ea;
+  outline: none;
+}
+
+/* Buttons Row */
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.back-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: white;
+  color: #374151;
+  transition: background 0.2s;
+}
+.back-btn:hover {
+  background: #f9fafb;
+}
+.submit-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #7e22ce, #6b21a8);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}
+.submit-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #6b21a8, #581c87);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #3b0764, #4c1d95, #6d28d9);
+  color: white;
+  margin-top: 3rem;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.footer h3,
+.footer h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer p,
+.footer li {
+  color: #c4b5fd;
+  font-size: 0.875rem;
+}
+.footer-bottom {
+  border-top: 1px solid #5b21b6;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #c4b5fd;
+}

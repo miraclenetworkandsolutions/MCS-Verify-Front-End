@@ -44,17 +44,12 @@ const Navbar = () => {
 
             <div className={`${styles.navLinks} ${isOpen ? styles.navLinksOpen : ''}`}>
               <Link 
-                to="/" 
-                className={`${styles.navLink} ${isActive('/') ? styles.active : ''}`}
+                to="/Admin" 
+                className={`${styles.navLink} ${isActive('/Admin') ? styles.active : ''}`}
               >
-                Home
+                Admin
               </Link>
-              <Link 
-                to="/courses" 
-                className={`${styles.navLink} ${isActive('/courses') ? styles.active : ''}`}
-              >
-                Courses
-              </Link>
+             
               <Link 
                 to="/certificate-verification" 
                 className={`${styles.navLink} ${isActive('/certificate-verification') ? styles.active : ''}`}
@@ -65,24 +60,22 @@ const Navbar = () => {
                 to="/about" 
                 className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}
               >
-                About Us
+               
               </Link>
               <Link 
-                to="/contact" 
-                className={`${styles.navLink} ${isActive('/contact') ? styles.active : ''}`}
+                to="/Student" 
+                className={`${styles.navLink} ${isActive('/Student') ? styles.active : ''}`}
               >
-                Contact
+             Student
               </Link>
             </div>
 
             <div className={styles.contactInfo}>
               <div className={styles.phone}>
-                <span>📞 077 767 5837</span>
+               
               </div>
               <div className={styles.socialLinks}>
-                <a href="#" className={styles.socialLink}>📘</a>
-                <a href="#" className={styles.socialLink}>📷</a>
-                <a href="#" className={styles.socialLink}>🐦</a>
+               
               </div>
             </div>
 

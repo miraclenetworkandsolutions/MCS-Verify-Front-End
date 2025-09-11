@@ -1,0 +1,404 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.auth-container {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.back-link {
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #e55a2b;
+}
+
+.auth-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.auth-header p {
+  color: #cbd5e0;
+  font-size: 16px;
+}
+
+.auth-card {
+  max-width: none;
+}
+
+.auth-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-footer p {
+  color: #cbd5e0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 30px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-header p {
+  color: #cbd5e0;
+  font-size: 14px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-item {
+  width: 100%;
+  padding: 15px 25px;
+  background: none;
+  border: none;
+  color: #cbd5e0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.nav-item.active {
+  background: rgba(255, 107, 53, 0.2);
+  color: #ff6b35;
+  border-right: 3px solid #ff6b35;
+}
+
+.nav-icon {
+  font-size: 18px;
+}
+
+.sidebar-footer {
+  padding: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content-header h1 {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.admin-info {
+  color: #cbd5e0;
+  font-weight: 500;
+}
+
+.content-body {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.add-certificate-form {
+  margin-bottom: 30px;
+}
+
+.add-certificate-form .card {
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 0;
+}
+
+.add-certificate-form h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grade-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.grade-badge.pass {
+  background: rgba(99, 179, 237, 0.2);
+  color: #63b3ed;
+}
+
+.grade-badge.distinction {
+  background: rgba(104, 211, 145, 0.2);
+  color: #68d391;
+}
+
+.grade-badge.merit {
+  background: rgba(255, 107, 53, 0.2);
+  color: #ff6b35;
+}
+
+.settings-section .card {
+  margin-bottom: 0;
+}
+
+.settings-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.setting-item h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  color: #cbd5e0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.account-info {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account-info p {
+  color: #cbd5e0;
+  margin-bottom: 10px;
+}
+
+.account-info strong {
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .sidebar-header {
+    min-width: 200px;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    min-width: 400px;
+  }
+  
+  .sidebar-footer {
+    min-width: 150px;
+  }
+  
+  .nav-item {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+  
+  .content-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .content-header h1 {
+    font-size: 24px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sidebar {
+    flex-direction: column;
+  }
+  
+  .sidebar-nav {
+    flex-direction: column;
+    min-width: auto;
+  }
+  
+  .sidebar-header,
+  .sidebar-footer {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 0 15px;
+  }
+  
+  .auth-header h1 {
+    font-size: 24px;
+  }
+  
+  .content-body {
+    padding: 20px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .table {
+    font-size: 14px;
+  }
+}

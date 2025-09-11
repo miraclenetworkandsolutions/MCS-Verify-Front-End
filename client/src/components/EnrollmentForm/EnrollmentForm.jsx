@@ -4,8 +4,8 @@ import styles from './EnrollmentForm.module.css';
 
 const courses = [
   'Bachelor of Information Technology (BIT)',
-  'Miracle Certified WebApp Developer (MCWD)',
-  'Miracle Certified Computerized Accountant (MCCA)',
+  'Miracle Certified WebApp Developer (HND)',
+  'Miracle Certified Computerized Accountant (CMD)',
   'Higher Diploma in Computing',
   'Diploma in Software Engineering',
   'Certificate in Computer Applications',
