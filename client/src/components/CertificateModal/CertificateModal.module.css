@@ -1,0 +1,340 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 200;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-white);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-heavy);
+  z-index: 201;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-out;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--background-light);
+  color: var(--text-secondary);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: var(--error-color);
+  color: white;
+}
+
+.certificate {
+  background: white;
+  padding: var(--spacing-2xl);
+  margin: var(--spacing-lg);
+  border: 3px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  min-height: 600px;
+  position: relative;
+}
+
+.certificate::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  pointer-events: none;
+}
+
+.certificateHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.logo {
+  margin-bottom: var(--spacing-lg);
+}
+
+.logoIcon {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto var(--spacing-sm);
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.certificateTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.certificateBody {
+  text-align: center;
+}
+
+.certificationText {
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.certificationText p {
+  font-size: 18px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.studentName {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: var(--spacing-lg) 0;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 8px;
+}
+
+.courseName {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: var(--spacing-lg) auto;
+}
+
+.certificateDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  text-align: left;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.signatures {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+}
+
+.signature {
+  text-align: center;
+}
+
+.signatureLine {
+  width: 150px;
+  height: 1px;
+  background: var(--text-primary);
+  margin: 0 auto var(--spacing-sm);
+}
+
+.signature p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.seal {
+  text-align: center;
+}
+
+.sealIcon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.seal p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.modalActions {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  border-top: 2px solid var(--border-color);
+}
+
+.printButton,
+.downloadButton {
+  flex: 1;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.printButton {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.downloadButton {
+  background: var(--accent-color);
+  color: white;
+}
+
+.printButton:hover,
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 95%;
+    max-height: 95vh;
+  }
+  
+  .certificate {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-sm);
+  }
+  
+  .certificateTitle {
+    font-size: 24px;
+  }
+  
+  .studentName {
+    font-size: 28px;
+  }
+  
+  .courseName {
+    font-size: 20px;
+  }
+  
+  .certificateDetails {
+    grid-template-columns: 1fr;
+  }
+  
+  .signatures {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .modalActions {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .overlay,
+  .modalHeader,
+  .modalActions,
+  .closeButton {
+    display: none !important;
+  }
+  
+  .modal {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+  
+  .certificate {
+    margin: 0;
+    border: 2px solid black;
+  }
+}

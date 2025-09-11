@@ -1,38 +1,36 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
-// Pages
-import Home from "./pages/home";   // ✅ Import added
-import Courses from "./pages/Courses";
-import Publication from "./pages/Publication";
-import NewsEvents from "./pages/NewsEvents";
-import Gallery from "./pages/Gallery";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import VLS from "./pages/VLS";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import Courses from './pages/Courses/Courses';
+import CertificateVerification from './pages/CertificateVerification/CertificateVerification';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Toast from './components/Toast/Toast';
+import { ToastProvider } from './context/ToastContext';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <ToastProvider>
       <Router>
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/publication" element={<Publication />} />
-            <Route path="/news-events" element={<NewsEvents />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/vls" element={<VLS />} />
-          </Routes>
-        </main>
-        <Footer />
+        <div className={styles.app}>
+          <Navbar />
+          <main className={styles.main}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/certificate-verification" element={<CertificateVerification />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+          <Footer />
+          <Toast />
+        </div>
       </Router>
-    </div>
+    </ToastProvider>
   );
 }
 
