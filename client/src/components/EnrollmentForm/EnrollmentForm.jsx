@@ -55,7 +55,7 @@ const EnrollmentForm = () => {
 
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
-    } else if (!/^[\+]?[0-9\s\-\(\)]{10,}$/.test(formData.phone)) {
+    } else if (!/^[+]?[0-9\s\-()]{10,}$/.test(formData.phone)) {
       newErrors.phone = 'Please enter a valid phone number';
     }
 

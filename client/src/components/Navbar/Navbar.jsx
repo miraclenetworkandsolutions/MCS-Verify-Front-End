@@ -69,6 +69,7 @@ const Navbar = () => {
              Student
               </Link>
             </div>
+            
 
             <div className={styles.contactInfo}>
               <div className={styles.phone}>

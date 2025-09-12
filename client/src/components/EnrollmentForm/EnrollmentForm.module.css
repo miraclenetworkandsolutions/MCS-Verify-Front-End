@@ -140,9 +140,11 @@
 }
 
 .error {
-  color: var(--error-color);
+  color: red(--error-color);
   font-size: 12px;
+  margin-top: 4px;
   font-weight: 500;
+    display: block;
 }
 
 .formActions {

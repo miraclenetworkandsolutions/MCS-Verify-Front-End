@@ -88,7 +88,7 @@ const StudentRegister = () => {
         
         login(newStudent, 'student');
         navigate('/student/dashboard');
-      } catch (error) {
+      } catch (setErrors) {
         setErrors({ general: 'Registration failed. Please try again.' });
       }
       
